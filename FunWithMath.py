@@ -32,7 +32,10 @@ def archimedesParameter(numSides):
     innerAngleB = 360.0 / numSides
     halfAngleA = innerAngleB / 2
     oneHalfSideS = math.sin(math.radians(halfAngleA))
-    sideS = oneHalfSideS * 2
-    polygonCircumference = numSides * sideS
+    RadiusS = oneHalfSideS * 1
+    polygonCircumference = numSides * RadiusS
     pi = polygonCircumference / 2
-    return pi
+    roundUp = round(pi)
+    return roundUp
+print(archimedesParameter(35))
+print(archimedesParameter(1000000000))
