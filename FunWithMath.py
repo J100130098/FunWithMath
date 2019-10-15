@@ -49,7 +49,16 @@ for x in range(1, 6):
 print(acc)
 
 # compute the sum of the first 100 even numbers
+Even = 0
+for x in range(1,101):
+    Even = (Even + x)
+print(Even)
 # compute the sum of the first 50 odd numbers
+Odd = (1,50)
+for x in range(1,50):
+    if not x % 2:
+        Odd + x
+print(Odd)
 # compute the average of the first 100 odd numbers
 # write a function that returns the average of the first N numbers, where N is a parameter
 # write a function called factorial that computes the product of the first N
