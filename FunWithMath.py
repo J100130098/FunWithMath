@@ -50,19 +50,29 @@ print(acc)
 
 # compute the sum of the first 100 even numbers
 Even = 0
-for x in range(1,101):
-    Even = (Even + x)
+for x in range(1, 101):
+    Even = (Even + x * 2)
 print(Even)
 # compute the sum of the first 50 odd numbers
-Odd = (1,50)
-for x in range(1,50):
-    if not x % 2:
-        Odd + x
+Odd = 50
+for x in range(1, 50):
+    Odd = Odd + x * 2
 print(Odd)
 # compute the average of the first 100 odd numbers
+Oavg = 0
+for x in range(1, 200):
+    if x % 2 :
+        Oavg : Oavg + 0
+        Oavg = (Oavg + x)
+print(Oavg/100)
 # write a function that returns the average of the first N numbers, where N is a parameter
+Even = 0
+for x in range(1, 101):
+    Even = (Even + x)
+print(Even/101)
 # write a function called factorial that computes the product of the first N
 #   Numbers, where N is a parameter
+factorial =
 # Each Number in the Fibonacci sequence is the sum of the previous two numbers
 # the first two numbers in the sequence are 1 and 1. compute the 10th Fibbonacci Number, where N is a parameter
 # You may assume that N will be greater that or equal to 3.
