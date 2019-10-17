@@ -72,7 +72,10 @@ for x in range(1, 101):
 print(Even/101)
 # write a function called factorial that computes the product of the first N
 #   Numbers, where N is a parameter
-factorial =
+factorial = 1
+for x in range(1,1000):
+    factorial = (factorial * x)
+print(factorial)
 # Each Number in the Fibonacci sequence is the sum of the previous two numbers
 # the first two numbers in the sequence are 1 and 1. compute the 10th Fibbonacci Number, where N is a parameter
 # You may assume that N will be greater that or equal to 3.
