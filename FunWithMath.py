@@ -80,7 +80,7 @@ print(factorial)
 # the first two numbers in the sequence are 1 and 1. compute the 10th Fibbonacci Number, where N is a parameter
 # You may assume that N will be greater that or equal to 3.
 Fibbonacci = x
-for x in range (1,18):
+for x in range(1,18):
     Fibbonacci = x+x
 print(Fibbonacci)
 
@@ -89,3 +89,40 @@ print(Fibbonacci)
 import random
 
 print(random.random())
+
+# Boolean expressions
+# > greater than
+# >= greater than or equal to
+# < less than
+# <= less than or equal to
+# == equal to
+# != not equal to
+
+Eggs = 25
+print(Eggs == 25)
+Coconuts = 15
+# compound Boolean expressions
+# and both need to be true to be true
+# or if either is true, then true
+# not is a negative sign
+print(not Coconuts < 20)
+
+# Decision making -- selection statements
+a = 5
+b = 10
+c = 75
+
+if a >= b:
+    c = 45
+    if b>c:
+        a=25
+    else:
+        a = -25
+else:
+    c=1050
+    if b == a:
+        c = 25
+
+print(a, b, c)
+
+print(c)
