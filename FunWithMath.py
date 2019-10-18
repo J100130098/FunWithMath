@@ -79,4 +79,13 @@ print(factorial)
 # Each Number in the Fibonacci sequence is the sum of the previous two numbers
 # the first two numbers in the sequence are 1 and 1. compute the 10th Fibbonacci Number, where N is a parameter
 # You may assume that N will be greater that or equal to 3.
+Fibbonacci = x
+for x in range (1,18):
+    Fibbonacci = x+x
+print(Fibbonacci)
 
+# A Monte Carlo Simulation
+
+import random
+
+print(random.random())
