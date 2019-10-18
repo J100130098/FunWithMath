@@ -124,5 +124,5 @@ else:
         c = 25
 
 print(a, b, c)
-
+# this is pretty cool
 print(c)
