@@ -143,3 +143,21 @@ else:
         else:
             ans = 75
 print(ans)
+
+def montePi(numDarts):
+
+    inCircle = 0
+
+    for i in range(numDarts):
+        x = random.random()
+        y = random.random()
+
+        distance = math.sqrt(x**2 + y**2)
+
+        if distance <= 1:
+            inCircle = inCircle + 1
+
+    pi = inCircle / numDarts * 4
+    return pi
+
+print(montePi(100000))
