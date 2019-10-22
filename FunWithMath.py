@@ -206,3 +206,45 @@ def montePi(numDarts):
 
 print(montePi(1000000))
 
+# Modify the simulation to plot points in the entire circle, you will have to adjust the calculated value
+# of pi accordingly.
+def montePi(numDarts):
+    scn = turtle.Screen()
+    t = turtle.Turtle()
+    t.speed(10000)
+
+    scn.setworldcoordinates(-2, -2, 2, 2)
+
+    t.penup()
+    t.goto(-1, 0)
+    t.pendown()
+    t.goto(1, 0)
+
+    t.penup()
+    t.goto(0, 1)
+    t.pendown()
+    t.goto(0, -1)
+
+    inCircle = -1, 0
+    t.penup()
+
+    for i in range(numDarts):
+        x = random.uniform(-1, 1)
+        y = random.uniform(-1, 1)
+
+        distance = math.sqrt(x**2 + y**2)
+
+        t.goto(x, y)
+
+        if distance <= 1:
+            inCircle = inCircle + 1
+            t.color("blue")
+        else:
+            t.color("red")
+
+        t.dot()
+
+    pi = inCircle / numDarts * 4
+    scn.exitonclick()
+    return pi
+
