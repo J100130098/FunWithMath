@@ -207,7 +207,7 @@ def montePi(numDarts):
 
 # Modify the simulation to plot points in the entire circle, you will have to adjust the calculated value
 # of pi accordingly.
-def montePi(numDarts):
+def superMontePi(numDarts):
     scn = turtle.Screen()
     t = turtle.Turtle()
     t.speed(10000)
@@ -247,4 +247,4 @@ def montePi(numDarts):
     scn.exitonclick()
     return pi
 
-print(montePi(10000))
+print(superMontePi(10000))
