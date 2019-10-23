@@ -204,7 +204,6 @@ def montePi(numDarts):
     scn.exitonclick()
     return pi
 
-print(montePi(1000000))
 
 # Modify the simulation to plot points in the entire circle, you will have to adjust the calculated value
 # of pi accordingly.
@@ -225,12 +224,12 @@ def montePi(numDarts):
     t.pendown()
     t.goto(0, -1)
 
-    inCircle = -1, 0
+    inCircle = 0
     t.penup()
 
     for i in range(numDarts):
-        x = random.uniform(-1, 1)
-        y = random.uniform(-1, 1)
+        x = -1. + 2. * random.random()
+        y = -1. + 2. * random.random()
 
         distance = math.sqrt(x**2 + y**2)
 
@@ -248,3 +247,4 @@ def montePi(numDarts):
     scn.exitonclick()
     return pi
 
+print(montePi(10000))
